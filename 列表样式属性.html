@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表样式属性</title>
+   <style type="text/css">
+       /*
+       
+       无序列表,有序列表
+       
+       */
+        /*去除列表前面的项目符号*/  
+       
+        .box ul li{
+
+            border: 1px solid #f00;
+            height: 60px;
+            line-height: 60px;
+            /* list-style-position: inside; */
+            /* list-style-type: none;
+            list-style-image: url(2.png); */
+            list-style:none outside url(2.png)  ;/*简写属性*/
+        }
+        .box1{
+
+            width: 500px;
+            border: 1px solid #f00;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+   </style>
+</head>
+<body>
+   
+    <div class="box">
+        <h2>列出中国的四大名著</h2>
+
+        <ul>
+            <li>三国演义</li>
+            <li>西游记</li>
+            <li>红楼梦</li>
+            <li>水浒传</li>
+        </ul>
+
+    </div>
+    <div class="box1">asdasdadasd</div>
+</body>
+</html>

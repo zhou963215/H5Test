@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*后代元素选择器 匹配内部包含的所有子元素*/
+        /* .box h2{
+
+
+            color: brown;
+            text-decoration: overline;
+        } */
+        /*子元素选择器 只匹配下一级*/
+
+        /* .box>h2{
+
+            color: brown;
+            text-decoration: overline;
+
+        } */
+         /*相邻元素选择器 
+            格式 E + F{}
+            E元素和F元素必须是兄弟关系 平辈关系
+            必须紧挨着.
+            f元素一定是在E元素下面
+          */
+
+        .box +p{
+
+            color: chartreuse;
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <p>我在上面</p>
+    <div class="box">
+        <h2>html</h2>
+        <div>
+            <h2>php</h2>
+        </div>
+        <h2>123</h2>
+    </div>
+    <p>我在下面</p>
+</body>
+</html>
