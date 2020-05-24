@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style type="text/css">
+     /*
+        上下的margin不会叠加.取较大值
+        水平方向没有塌陷现象
+        浮动元素没有塌陷现象
+
+     */
+     *{
+         margin: 0;
+     }
+    /*1个值 上右下左   两个值 上下 左右 三个值 上  左右 下*/
+        .div1{
+
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            margin-bottom: 20px;
+        }
+        .div2{
+
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            margin-top: 20px;
+        }
+        .box{
+            margin-top: 20px;
+
+            width: 100px;
+            border: 5px solid #000000;
+            overflow: hidden;
+        }
+        .dive1{
+
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            float: left;
+            margin-bottom: 20px;
+        }
+        .dive2{
+
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            float: left;
+            margin-top: 40px;
+        }
+        .box1{
+
+            /* width: 100px; */
+            height: 100px;
+            background-color: #f00;
+            /* margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: 100px; */
+            margin: 100px auto;
+
+        }
+        span{
+            width: 100px;/*行内元素无法设置宽度,无法实现水平居中.*/
+            background-color: blueviolet;
+            margin: 100px auto;
+        }
+         .box2{
+
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            /* margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: 100px; */
+            margin: 100px auto;
+            float: left;/*不属于标准文档流,无法水平居中,margin属性是实现盒子的水平居中.不是文本的水平居中*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <div class="box">
+        <div class="dive1"></div>
+        <div class="dive2"></div>
+    </div>
+    <div class="box1"></div>
+    <span>看看我在哪里</span>
+    <div class="box2"></div>
+</body>
+</html>

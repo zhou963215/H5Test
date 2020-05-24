@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动&案例</title>
+    <style type="text/css">
+
+    /*
+        浮动相当于飘起来
+        相当于控件的window
+        浮动起来之后会变成块元素
+        overflow: hidden;溢出隐藏
+    */
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background-image: url(1.jpeg);
+    }
+        .box{
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #00f;
+        }
+        .div1{
+
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            float: left;;
+        }
+        .div2{
+
+            width: 100px;
+            height: 100px;
+            background-color:#0f0;
+            float: left;
+        }
+        .div3{
+
+            width: 100px;
+            height: 100px;
+            background-color:#00f;
+
+        }
+        .box1{
+
+            width: 600px;
+            border: 1px solid #ff0000;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .s1{
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            /* float: left; */
+        }
+        .s2{
+            background-color: #00f;
+
+        }
+        .s2{
+            background-color:#0f0;
+
+        }
+        .box2{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 960px;
+            /* height: 40px;
+             */
+            background-color:#0f0;
+        }
+       .box2 ul{
+
+            list-style: none;
+            /* height: 40px; */
+
+        }
+        .box2 ul li {
+
+            width: 120px;
+            float: left;/*浮动*/
+            text-align: center;
+            line-height: 40px;
+        }
+        a{
+
+            text-decoration: none;
+            color:#ffffff;
+        }
+        /*清除浮动*/
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+    <div class="box1">
+        <span class="s1">文本1</span>
+        <span class="s2">文本2</span>
+        <span class="s3">文本2</span>
+    </div>
+
+    <div class="box2">
+        <ul>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <h2>1231232</h2>
+
+    <div class="box2">
+        <ul style="overflow: hidden;">
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+        </ul>
+        <h2>212312312</h2>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        /*
+        属性选择器它是与标签的属性名和属性值有关
+        属性选择器是通过标签的属性名和属性值来匹配元素
+        attr是英文单词attribute的简写,中文意思是属性
+        val         value                   值
+        [attr]是匹配属性
+        */
+        /* p[align]{
+
+            color: #f00;
+        } */
+        /* p[align=center]{
+            color: #00f;
+
+        } */
+        /*指定值开头*/
+        /* font[color^="#FF"]{
+
+            border: 1px solid #00f;
+        } */
+         /*指定值结尾*/
+        /* font[color$="00"]{
+
+            border: 1px solid #00f;
+        } */
+         /*包含,不区分大小写*/
+        font[color*="aa"]{
+
+            border: 1px solid #00f;
+        }
+    </style>
+</head>
+
+<body>
+    
+<p align = "center">黑马程序员1</p>
+<h2 align = "center">黑马程序员2</h2>
+<p align = "left">黑马程序员1</p>
+<font color = "#FF0000">颜色</font>
+<font color = "#FFAA00">颜色</font>
+<font color = "#FFaabb">颜色</font>
+<font color = "#aacc00">颜色</font>
+<font color = "#FFaadd">颜色</font>
+<font color = "#ddaabb">颜色</font>
+
+</body>
+</html>
