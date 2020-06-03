@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*
+        postion :fixed 固定定位 相对于浏览器窗口定位
+        postion :relatvie 相对定位
+        postion :absoulute 绝对定位
+     */
+        *{
+            margin: 0;
+            padding:0;
+        }
+         body{
+ 
+            padding-top: 60px;
+        }
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            position: fixed;
+            /* display: none; */
+        }
+        .bott{
+
+            width: 60px;
+            height: 60px;
+            display: block;
+            background-color: #cccccc;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            position: fixed;
+            right: 30px;
+            bottom: 100px;
+        }
+        .nav{
+
+            width: 100%;
+            height: 60px;
+            background-color: #222222;
+            position:fixed;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+        }
+        .nav .inner_c{
+
+            width: 1000px;
+            height: 60px;
+            margin: 0px auto;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            float: left;
+            width: 100px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+        ul li a{
+
+            display: block;
+            width: 100px;
+            height: 60px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+        }
+        ul li a:hover{
+            background-color: wheat;
+        }
+       p{
+
+           width: 100px;
+           height: 30px;
+           line-height: 30px;
+           background-color: #ff0000;
+           text-align:  center;
+           position: relative;
+
+
+       }
+       img{
+           display: block;
+       }
+    </style>
+</head>
+<body>
+    
+    <!-- <h2>固定定位</h2> -->
+    <div class="nav">
+        <div class="inner_c">
+            <ul>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+                <li><a href="#">网站栏目</a></li>
+            </ul>
+        </div>
+    </div>
+    <h2>固定布局</h2>
+    <!-- <p>111</p> -->
+    <img src="../image/2.jpeg">
+    <img src="../1.jpeg" alt="">
+    <img src="../1.jpeg" alt="">
+    <img src="../1.jpeg" alt="">
+    <img src="../1.jpeg" alt="">
+    <p>看看我在哪里</p>
+    <img src="../1.jpeg" alt="">
+    <img src="..1/.jpeg" alt="">
+    <img src="../1.jpeg" alt="">
+
+    <a class="bott" href="#">返回<br>顶部</a>
+
+</body>
+</html>

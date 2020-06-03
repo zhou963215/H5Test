@@ -79,8 +79,27 @@
             margin-top: 100px;
             margin-bottom: 100px; */
             margin: 100px auto;
-            float: left;/*不属于标准文档流,无法水平居中,margin属性是实现盒子的水平居中.不是文本的水平居中*/
+            /* float: left; */
+            /*不属于标准文档流,无法水平居中,margin属性是实现盒子的水平居中.不是文本的水平居中*/
 
+        }
+        /*
+            不要给子元素设置margin,设置父元素的padding
+            margin这个属性本意是用来描述兄弟与兄弟之间的,不是父子之间的
+            
+        */
+        .box3{
+
+            width: 300px;
+            height: 500px;
+            background-color: #0000ff;
+            padding-top: 100px;
+        }
+        .content{
+
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
         }
     </style>
 </head>
@@ -95,5 +114,9 @@
     <div class="box1"></div>
     <span>看看我在哪里</span>
     <div class="box2"></div>
+
+    <div class="box3">
+        <div class="content"></div>
+    </div>
 </body>
 </html>
