@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas id="canvas" width="400px" height="400px"></canvas>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+        点击显示时间
+    </button>
+    <p id="demo">1111</p>
+
+    <button type="button" onclick="hello()">点击改变</button>
+    <script>
+        var c = document.getElementById("canvas");
+        var cxt = c.getContext("2d");
+        cxt.fillStyle = "#ff0000";
+        // cxt.fillRect(0,0,100,100);
+        // cxt.beginPath();
+        // cxt.arc(70,18,15,0,Math.PI*2,true);
+        // cxt.closePath();
+        // cxt.fill();
+        var img = new Image();
+        img.onload = function(){
+        
+         cxt.drawImage(img,0,0);
+
+
+        }
+        img.src = "../1.jpeg";
+        function hello(){
+
+            document.getElementById('demo').innerHTML = "Hello JavaScript";
+        }
+    </script>
+</body>
+</html>

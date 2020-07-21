@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ff0000;
+        }
+        div:nth-child(1){
+
+            /*左上 右上 右下 左下*/
+            border-radius: 10px 20px 30px 30px;
+            background-color: #ff0000;
+            background: rgba(255, 0, 0, 0.3);
+        }
+        div:nth-child(2){
+
+            border-radius: 20px;
+        }
+        div:nth-child(3){
+
+            border-radius: 10px 0px 0px 10px;
+        }
+         div:nth-child(4){
+
+            border-radius: 10px 10px 0px 0px;
+        }
+         div:nth-child(5){
+
+            border-radius: 50px;
+        }
+         div:nth-child(6){
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        div:nth-child(7){
+            width: 100px;
+            height: 50px;
+            background-color: #9900aa;
+            border-radius: 50px 50px 0px 0px;
+        }
+        div:nth-child(8){
+            width: 50px;
+            height: 100px;
+            background-color: #9900aa;
+            border-radius: 50px 0px 0px 50px;
+        }
+        body{
+            background-color: #cccccc;
+
+        }
+        .more{
+
+            width: 60px;
+            height: 20px;
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 20px;
+            margin: 100px auto;
+            border-radius: 10px;
+            font-family: "微软雅黑";
+            font-size: 12px;
+
+        }
+        a{
+
+            display:block;
+            width: 60px;
+            height: 20px;
+            border-radius: 10px;
+            
+        }
+        a:link,a:visited{
+
+            color: #000000;
+            text-decoration: none;
+        }
+        .more a:hover{
+
+            background-color: #ffa500;
+            color: #ffffff;
+        }
+        img{
+
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 10px solid rgba(0, 0, 0, 0.3);
+        }
+        p{
+
+            color: rgba(255, 0, 0, 0.4)
+        
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div class="more"><a href="#">更多></a></div>
+
+    <img src="./image/2.jpeg" alt="">
+    <p>1 概述
+        PLMediaStreamingKit 是一个适用于 iOS 的 RTMP 直播推流 SDK，可高度定制化和二次开发。SDK 提供 RTMP 推流的全套解决方案，包括采集，处理（美颜，水印等），编码，封包，发送。特色是支持 H.264 硬编码，以及支持 AAC-LC 硬编码；同时，还根据移动网络环境的多变性，实现了一套可供开发者灵活选择的编码参数集合。
+        
+        1.1 SDK 下载地址</p>
+</body>
+</html>

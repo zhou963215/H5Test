@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        .box{
+
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+
+            /*设置阴影
+                boxshadow: 水平方向阴影 垂直方向 阴影清晰度 阴影大小 阴影颜色 阴影位置 inset outset(默认是)
+            */
+            box-shadow: 3px 3px 3px 3px #ff0000 ,-4px -4px 2px 2px #ddaa77 inset;
+        }
+        img{
+            box-shadow: 2px 2px 2px 2px #ddaa77;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <img src="1.jpeg" alt="">
+</body>
+</html>

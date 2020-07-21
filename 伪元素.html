@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style>
+        .box{
+            width: 40%;
+            margin: 100px auto;
+            font-size: 14px;
+            border: 1px solid #444;
+            color: #333333;
+        }
+        .box::first-letter{
+            /*操作当前元素中的第一个字*/
+            color: #ff0000;
+            font-size: 40px;
+            padding: 20px;
+        }
+        .box::first-line{
+            /*操作当前元素中的第一行字*/
+            color: #9f79ee;
+            
+        }
+        .box::before{
+
+            /*要在当前元素的最前面插入问题,必须将文字放上在content*/
+            content: "黑马程序员";
+        }
+        .box::after{
+
+            content: "hello";
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        今年，对于苹果来说是特殊且意义重大的一年。上半年推出了全新一代的iPhone SE，定价定位上有了新的突破，下半年则有望带来iPhone机型由4G到5G的升级。这使得外界对下半年将推出的新iPhone十分关注。
+早在去年iPhone 11系列推出后，就陆续有爆料在网络或分析报告中出现。现在，随着新机研发的推进，5G iPhone也曝光了更多的信息。
+    </div>
+</body>
+</html>
